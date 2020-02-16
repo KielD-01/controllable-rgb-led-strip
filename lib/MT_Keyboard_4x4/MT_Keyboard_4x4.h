@@ -19,7 +19,6 @@
             void setRows(byte *Pins);
             void setKeyMap(char *KeyMap);
             void setKeyPad(Keypad KeyPad);
-            Keypad* getKeyPad();
             
         protected:
  

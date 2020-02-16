@@ -26,13 +26,7 @@ void setup() {
   Serial.begin(9600);
 
   strip.init();
-  kbrd.setKeyPad(
-    Keypad(makeKeymap(KeyMap),
-     KbrdRowsPins, 
-     KbrdColumnsPins, 
-     KbrdRows, 
-     KbrdCols)
-  );
+  kbrd.setKeyMap((char*) KeyMap);
 }
 
 void loop() {

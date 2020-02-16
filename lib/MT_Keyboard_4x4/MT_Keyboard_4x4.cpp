@@ -17,7 +17,3 @@ void MatrixKeyboard4x4::setKeyMap(char *KeyMap) {
     this->KeyMap = makeKeymap(KeyMap);
     this->KeyPad = new Keypad(this->KeyMap, this->RowsPins, this->RowsPins, 4, 4);
 }
-
-Keypad MatrixKeyboard4x4::getKeyPad() {
-    return *this->KeyPad;
-}
